@@ -8,6 +8,8 @@
       </li>
     </ul>
     <div>{{ postsData }}</div>
+    <button class="btn btn-primary">bootstrap-btn</button>
+    <b-button variant="primary">bootstrap-vue-btn</b-button>
   </div>
 </template>
 
@@ -19,7 +21,8 @@ export default {
     return {
       msg: 'Welcome to invoice App',
       items: testJson.sampleData,
-      postsData: ''
+      postsData: '',
+      fetchUrl: process.env.FETCH_URL
     }
   },
   // created () {
@@ -27,7 +30,7 @@ export default {
   // compute: {
   // },
   created: async function () {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    const response = await fetch(this.fetchUrl)
     this.postsData = await response.json()
   }
 }
