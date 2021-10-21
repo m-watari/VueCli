@@ -14,10 +14,12 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@mdi/font": "^6.3.95",
     "bootstrap": "^5.1.0",
     "bootstrap-vue": "^2.21.2",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^2.5.10"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

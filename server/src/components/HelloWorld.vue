@@ -17,6 +17,9 @@
 import testJson from '../assets/test'
 export default {
   name: 'HelloWorld',
+  icons: {
+    iconfont: 'mdi' // 追加
+  },
   data () {
     return {
       msg: 'Welcome to invoice App',

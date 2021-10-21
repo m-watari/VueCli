@@ -28,3 +28,13 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+# 起動方法
+# Docker構築&起動
+docker-compose up -d
+
+# コンテナに入る
+docker-compose exec web sh
+
+/app # npm run dev
